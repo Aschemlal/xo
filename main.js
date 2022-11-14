@@ -92,3 +92,9 @@ let jeu=a=> {
 
 
 
+let rejouer=()=>{
+    for(let i=1; i<10; i++){
+        td[i].innerHTML="&nbsp;&nbsp;"
+    }
+    console.log(1)
+}
