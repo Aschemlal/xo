@@ -10,12 +10,10 @@ body {
 }
 
 .page {
-    background-color: teal;
+    background-color: black;
     box-shadow:  22px 22px 44px #b3b3b3,
     -22px -22px 44px #ffffff;
-    background: teal; 
-    background: -webkit-linear-gradient(to right, rgb(2, 96, 96), rgb(4, 141, 141));  
-    background: linear-gradient(to right, rgb(1, 94, 94), rgb(5, 140, 140)) ;
+    background: black; 
     width: 93%;
     height: 93vh;
     border-radius: 30px;
@@ -26,6 +24,8 @@ body {
 table {
     font-size: 35px;
     color: white;
+    border-spacing: .5rem .5rem;
+    
 }
 tr {
     border: 1px solid white;
@@ -33,16 +33,36 @@ tr {
 
 .player {
     position: absolute;
-    top: 170px;
+    top: 110px;
     left: 250px;
     color: white;
     font-size: 25px;
 }
 td {
     border-radius: 10px;
-    box-shadow: inset 20px 20px 19px teal,
-            inset -20px -20px 19px rgb(1, 77, 77);
-    padding: 18px;
+    width: 50px;
+    height: 70px;
     margin: 20px;
-
+    text-align: center;
 }
+
+table {
+    
+    margin: 0 auto;
+  }
+  table td {
+    padding: 1rem;
+    border: 5px solid white; 
+  }
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }

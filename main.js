@@ -48,11 +48,11 @@ let win=()=>{
         
     }
 }
-let test;
+let test=false
+let see=true
 let jeu=a=> {
-
     
-    if(!((td[a].textContent=="X")||(td[a].textContent=="O"))){
+    if((!((td[a].textContent=="X")||(td[a].textContent=="O")))&&(!((winner.textContent=="X")||(winner.textContent=="O")))){
         if(!v) {
             td[a].textContent="X";
             player.textContent="O";
@@ -68,6 +68,26 @@ let jeu=a=> {
         win()
     }
 
+    for(let i=1; i<10; i++){
+
+        if(!((td[i].textContent=="X")||(td[i].textContent=="O"))){
+            see=false
+        }
+    }
+
+
+    if(((winner.textContent=="X")||(winner.textContent=="O"))){
+
+    
+        if(test){
+            for(let i=1; i<10; i++){
+                td[i].innerHTML="&nbsp;&nbsp;"
+                winner.innerHTML="&nbsp;"
+                test=false
+            }
+        }
+        test=true;
+    }
 
     
         
