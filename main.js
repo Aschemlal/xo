@@ -14,6 +14,7 @@ for(let i=1; i<10; i++){
 
 
 let win=()=>{
+
     
     if((td[1].textContent==td[5].textContent)&&(td[5].textContent==td[9].textContent)){
         winner.textContent=td[1].textContent
@@ -47,6 +48,7 @@ let win=()=>{
         winner.textContent=td[7].textContent
         
     }
+
 }
 let test=false
 let see=true
@@ -76,7 +78,7 @@ let jeu=a=> {
     }
 
 
-    if(((winner.textContent=="X")||(winner.textContent=="O"))){
+    if(((winner.textContent=="X")||(winner.textContent=="O")||(see))){
 
     
         if(test){
@@ -88,6 +90,7 @@ let jeu=a=> {
         }
         test=true;
     }
+
 
     
         
