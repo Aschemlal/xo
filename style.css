@@ -1,0 +1,48 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-color: teal;
+    box-shadow:  22px 22px 44px #b3b3b3,
+    -22px -22px 44px #ffffff;
+    background: teal; 
+    background: -webkit-linear-gradient(to right, rgb(2, 96, 96), rgb(4, 141, 141));  
+    background: linear-gradient(to right, rgb(1, 94, 94), rgb(5, 140, 140)) ;
+    width: 93%;
+    height: 93vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table {
+    font-size: 35px;
+    color: white;
+}
+tr {
+    border: 1px solid white;
+}
+
+.player {
+    position: absolute;
+    top: 170px;
+    left: 250px;
+    color: white;
+    font-size: 25px;
+}
+td {
+    border-radius: 10px;
+    box-shadow: inset 20px 20px 19px teal,
+            inset -20px -20px 19px rgb(1, 77, 77);
+    padding: 18px;
+    margin: 20px;
+
+}
