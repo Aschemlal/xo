@@ -71,7 +71,6 @@ let jeu=a=> {
     }
 
 
-    if((winner.textContent=="X")||(winner.textContent=="O")){
 
     
         if(test){
@@ -81,9 +80,10 @@ let jeu=a=> {
                 test=false
             }
         }
-        test=true;
-    }
+        
+    
 
+    test=((winner.textContent=="X")||(winner.textContent=="O"))
 
     
         
