@@ -51,7 +51,7 @@ let win=()=>{
 
 }
 let test=false
-let see=true
+
 let jeu=a=> {
     
     if((!((td[a].textContent=="X")||(td[a].textContent=="O")))&&(!((winner.textContent=="X")||(winner.textContent=="O")))){
@@ -70,15 +70,8 @@ let jeu=a=> {
         win()
     }
 
-    for(let i=1; i<10; i++){
 
-        if(!((td[i].textContent=="X")||(td[i].textContent=="O"))){
-            see=false
-        }
-    }
-
-
-    if(((winner.textContent=="X")||(winner.textContent=="O")||(see))){
+    if((winner.textContent=="X")||(winner.textContent=="O")){
 
     
         if(test){
