@@ -4,6 +4,7 @@ let td = []
 let text = []
 let winner=document.getElementById("winner");
 player.textContent= ((!v)? "X": "O")
+winner.textContent="?"
 
 
 for(let i=1; i<10; i++){
@@ -12,6 +13,7 @@ for(let i=1; i<10; i++){
 
 let color=(a)=>{
     for(let i=1; i<10; i++){
+        td[i].style.transition="1s"
         if(td[i].textContent!=a){
             td[i].style.color="gray"
         }
@@ -19,8 +21,10 @@ let color=(a)=>{
             td[i].style.fontWeight="600"
             
         }
+
     }
 }
+
 
 let win=()=>{
 
@@ -106,14 +110,19 @@ let jeu=a=> {
         
 }
 
+let acolor=()=>{
+    for(let i=1; i<10; i++){
+        td[i].style.color="white"
+        td[i].style.fontWeight="normal"
+    }
+}
 
-
-
-let rejouer=()=>{
+let rejouer=()=>{ // fonction non utiliséé ou a ameliorer
     for(let i=1; i<10; i++){
         td[i].innerHTML="&nbsp;&nbsp;"
     }
     winner.innerHTML="?"
+    acolor()
     
 }
 
